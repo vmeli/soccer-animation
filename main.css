@@ -1,0 +1,22 @@
+.cgrid-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.soccer {
+    background: red;
+    position: relative;
+    height: 100px;
+}
+
+.ball {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.ball {
+	width: 100px;
+	height: 100px;
+}
