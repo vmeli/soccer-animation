@@ -13,9 +13,19 @@ function move() {
 	if(i < spaceTotal) {
 		i += spaceAvance;
 		ball.style.left = i + 'px';
+		// ball.style.animation = 'rodar 3s  linear';
+		ball.classList.add('rodar');
 		console.log(i,ball.style.left);
+
 	}else {
 		console.log("hola");
 	}
+	
+	ball.addEventListener("animationend", acaba);
+}
 
+
+function acaba(e) {
+	 ball.classList.remove('rodar');
+	 console.log("termine");
 }
